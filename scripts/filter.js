@@ -83,7 +83,7 @@ function displayCourses(courseList) {
   courseList.forEach((course) => {
     const listItem = document.createElement("li");
     listItem.className = `course-item ${course.completed ? "completed" : ""}`;
-    listItem.textContent = `${course.subject} ${course.number}`;
+    listItem.textContent = `${course.subject} ${course.number} ${course.completed ? "✓" : ""}`;
     courseListElement.appendChild(listItem);
   });
 
