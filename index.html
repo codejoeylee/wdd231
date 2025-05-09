@@ -16,7 +16,11 @@
 <body>
     <header>
         <div class="img-header">
-            <img src="images/profile.webp" alt="profile" class="profile">
+            <picture>
+                <source srcset="images/profile.png" media="(min-width: 800px)">
+                <source srcset="images/profile.png" media="(min-width: 500px)">
+                <img src="images/profile.png" alt="profile" class="profile">
+            </picture>
             <h3>Benjamin Asante</h3>
         </div>
         <nav>
@@ -46,7 +50,11 @@
             <div class="country">
                 <h2 class="country-title">Accra / Ghana</h2>
                 <figure>
-                    <img src="images/flag.webp" alt="profile" class="Accra">
+                    <picture>
+                        <source srcset="images/flag.png" media="(min-width: 800px)">
+                        <source srcset="images/flag.png" media="(min-width: 500px)">
+                        <img src="images/flag.png" alt="Accra Flag Profile Image" class="photo">
+                    </picture>
                     <figcaption>Accra Flag Profile Image</figcaption>
                 </figure>                  
             </div>
