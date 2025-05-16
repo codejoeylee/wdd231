@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0.5em 0.2em;
+    }
+
+    nav{
+        padding: 0.5rem 0.5rem;
+    }
+
+    .cards{
+        justify-content: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: #ffffff;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}

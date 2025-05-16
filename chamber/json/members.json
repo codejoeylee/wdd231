@@ -1,0 +1,95 @@
+{
+  "companies": [
+    {
+      "name": "PayFlow Ghana",
+      "address": "15 Tesano Ring Road, Tesano, Accra",
+      "phone": "+233 302 555 123",
+      "email": "info@payflowgh.example.com",
+      "website": "https://payflowgh.example.com",
+      "image": "https://www.payflow.io/img/logos/logo-payflow.png",
+      "membershipLevel": 3,
+      "established": 2019,
+      "employeeCount": 25,
+      "industry": "FinTech",
+      "specialties": ["Mobile Payments", "Digital Banking", "Financial Inclusion"]
+    },
+    {
+      "name": "Siess Logistics",
+      "address": "Okuja Avenue, Accra, Greater Accra Region",
+      "phone": "030 242 5004",
+      "email": "info@siessgh.com",
+      "website": "https://www.siessgh.com/",
+      "image": "https://static.wixstatic.com/media/368a8d_c401f53b44c14c5c90953dd0ebdfdcef~mv2.png/v1/fill/w_200,h_180,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Asset%203_2x.png",
+      "membershipLevel": 2,
+      "established": 2015,
+      "employeeCount": 20,
+      "industry": "Logistics & Supply Chain",
+      "services": ["Freight Forwarding", "Warehousing", "Customs Clearance", "Transportation Solutions"]
+    },
+    {
+      "name": "SolarPower Ghana",
+      "address": "23 Tesano Street, Tesano, Accra",
+      "phone": "+233 302 555 789",
+      "email": "contact@solarpowergh.example.com",
+      "website": "https://solarpowergh.example.com",
+      "image": "https://suka.com.gh/wp-content/uploads/2023/12/site-logo-enhanced.png",
+      "membershipLevel": 3,
+      "established": 2017,
+      "employeeCount": 35,
+      "industry": "Renewable Energy",
+      "services": ["Solar Installation", "Energy Storage Solutions", "Smart Grid Technology", "Energy Monitoring Systems"]
+    },
+    {
+      "name": "AgroTech Ghana",
+      "address": "45 Tesano Main Road, Tesano, Accra",
+      "phone": "+233 302 555 321",
+      "email": "support@agrotechgh.example.com",
+      "website": "http://www.parkagrotech.com/",
+      "image": "https://www.agritechwestafrica.com/images/logon.jpg?id=23",
+      "membershipLevel": 1,
+      "established": 2021,
+      "employeeCount": 15,
+      "industry": "AgriTech",
+      "specialties": ["Farm Management Software", "Agricultural IoT", "Supply Chain Solutions"]
+    },
+    {
+      "name": "SecureGH",
+      "address": "12 Tesano Link, Tesano, Accra",
+      "phone": "+233 302 555 654",
+      "email": "info@itechsecuregh.com",
+      "website": "https://www.itechsecuregh.com/",
+      "image": "https://secureghana.com/wp-content/uploads/2020/08/sgt300x140.png",
+      "membershipLevel": 2,
+      "established": 2019,
+      "employeeCount": 20,
+      "industry": "CyberSecurity",
+      "services": ["Digital Security", "Data Protection", "Security Training"]
+    },
+    {
+      "name": "LogiTech Ghana",
+      "address": "34 Tesano Avenue, Tesano, Accra",
+      "phone": "+233 302 555 987",
+      "email": "contact@logitechgh.example.com",
+      "website": "https://logitechgh.example.com",
+      "image": "https://telefonika.com/wp-content/uploads/2021/02/logo.png",
+      "membershipLevel": 3,
+      "established": 2020,
+      "employeeCount": 22,
+      "industry": "LogisticsTech",
+      "coverage": ["Last-mile Delivery", "Supply Chain Analytics", "Route Optimization"]
+    },
+    {
+      "name": "Hollard Ghana",
+      "address": "11 Patrice Lumumba Road, Accra, Greater Accra Region",
+      "phone": "030 222 0966",
+      "email": "info@hollard.com.gh",
+      "website": "https://www.hollard.com.gh/",
+      "image": "https://www.hollard.com.gh/webfiles/1746624789247/img/hollard-logo-1.svg",
+      "membershipLevel": 1,
+      "established": 2006,
+      "employeeCount": 50,
+      "industry": "Insurance",
+      "services": ["Life Insurance", "Motor Insurance", "Business Insurance", "Travel Insurance", "Home Insurance"]
+    } 
+  ]
+}
