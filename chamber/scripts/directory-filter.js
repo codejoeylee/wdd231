@@ -17,15 +17,19 @@ const displayMembers = (companies) => {
     Email.textContent = `Email: ${company.email}`;
     Phone.textContent = `Phone: ${company.phone}`;
 
-
     
     let websiteLink = document.createElement("a");
     websiteLink.href = company.website;
     websiteLink.textContent = company.website;
     websiteLink.target = "_blank"; 
-    Website.innerHTML = `Website: `;  
-    Website.style.display = "inline"; 
-    websiteLink.style.display = "inline"; 
+    websiteLink.style.textDecoration = "none";
+    websiteLink.style.color = "white"; 
+    Website.style.backgroundColor = "#1D5CCA";
+    websiteLink.style.backgroundColor = "#1D5CCA"
+    websiteLink.style.fontWeight = "bold"; 
+    websiteLink.style.wordBreak = "break-word"; 
+    websiteLink.style.overflowWrap = "break-word";
+    Website.innerHTML = `Website: `; 
     Website.appendChild(websiteLink);
 
     portrait.setAttribute("src", company.image);
