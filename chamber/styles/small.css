@@ -17,7 +17,7 @@
     .nav-links {
         display: none;
         position: absolute;
-        top: 80px;
+        top: 100px;
         left: 0;
         right: 0;
         flex-direction: column;
@@ -25,6 +25,22 @@
         padding: 1rem;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .nav-links li,
+    .nav-links li a {
+        background-color: #FFBF41;
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+
+    .nav-links a:hover::after {
+        content: " ➜";
+        font-size: 18px;
+        color: #1D5CCA;
+        transition: ease-in 0.2;
+        right: 10px;
     }
 
     .nav-links.active {

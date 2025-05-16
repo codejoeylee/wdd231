@@ -16,7 +16,18 @@ const displayMembers = (companies) => {
     fullName.textContent = `${company.name}`;
     Email.textContent = `Email: ${company.email}`;
     Phone.textContent = `Phone: ${company.phone}`;
-    Website.textContent = `Website: ${company.website}`;
+
+
+    
+    let websiteLink = document.createElement("a");
+    websiteLink.href = company.website;
+    websiteLink.textContent = company.website;
+    websiteLink.target = "_blank"; 
+    Website.innerHTML = `Website: `;  
+    Website.style.display = "inline"; 
+    websiteLink.style.display = "inline"; 
+    Website.appendChild(websiteLink);
+
     portrait.setAttribute("src", company.image);
     portrait.setAttribute("alt", `Logo of ${company.name}`);
     portrait.setAttribute("loading", "lazy");

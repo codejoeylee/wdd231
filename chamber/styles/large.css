@@ -51,7 +51,8 @@ nav {
 }
 
 .nav-links a:hover {
-    color: orange;
+    color: #1D5CCA;
+    text-decoration: underline;
 }
 
 .menu-icon {
@@ -168,7 +169,12 @@ img {
     display: block;
 }
 
-
+h5 a {
+    text-decoration: none;
+    background-color: #1D5CCA;
+    color: #FFBF41;
+    word-break: break-all;
+}
 
 
 
@@ -219,7 +225,7 @@ h5 {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
-    
+
     justify-content: center;
     align-items: center;
     margin: 10px auto;
@@ -229,26 +235,26 @@ h5 {
 
 .cards.list-view {
     display: block;
-    
+
 }
 
 .cards.list-view section {
-    display: block; 
-    width: 100%; 
-    margin-bottom: 20px; 
-    background:#1D5CCA;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    background: #1D5CCA;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .cards.list-view img {
-    width:100%; 
+    width: 100%;
     max-width: 300px;
     max-height: 250px;
     object-fit: cover;
     border-radius: 4px;
-    margin:10px auto;
+    margin: 10px auto;
 }
 
 
@@ -330,7 +336,7 @@ footer {
     background-color: #1D5CCA;
 }
 
-.footer-section p, 
+.footer-section p,
 .footer-section ul li,
 .footer-section i {
     background-color: #1D5CCA;
@@ -384,14 +390,21 @@ footer {
     margin: 5px 0;
 }
 
-#lastModified , #currentyear{
-    color: black;
-    background-color: #FFBF41;
-    border: 1px solid #FFBF41;
+#currentyear {
+    color: white;
+    background-color: #1D5CCA;
+    border: 1px solid #1D5CCA;
     border-radius: 5px;
-    padding: 10px;
+    padding: 7px;
 }
 
-.highlight{
+#lastModified {
     background-color: #FFBF41;
+    padding: 8px;
+    border-radius: 10px;
+    color: black;
+}
+
+.highlight {
+    background-color: #FFBF41 !important;
 }
