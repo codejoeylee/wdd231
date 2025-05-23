@@ -1,0 +1,82 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    text-align: left;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+    margin: 30px 10px;
+    padding: 10px;
+}
+
+.hero-content h1,
+.hero-content p {
+    color: #333;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    color: black;
+}
+
+.hero-content p {
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.hero-img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.cta-button {
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 0.55em 8px;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.business-theme {
+    margin: 40px 0px;
+    text-align: center;
+    gap: 10px;
+}
+
+.hr1 {
+    width: 30%;
+    margin: 0 auto;
+    border: 2px solid #FFBF41;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .hero-image {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .hero-img {
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}

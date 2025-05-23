@@ -25,7 +25,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    
     <title>TGCC</title>
+    <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/small.css">
     <script src="scripts/directory-filter.js" defer></script>
@@ -56,24 +58,79 @@
                 <br>
                 <a href="join.html" class="cta-button">Join Now</a>
             </div>
+            <img src="images/hero-img.avif" alt="Chamber of Commerce Hero Image" class="hero-img">
         </div>
         <div class="business-theme">
             <h1>
-                Explore the best <br> businesses in our community, dedicated <br> to quality service and local growth.
+                Empowering Local Growth <br> Through Business Excellence and <br> Community Collaboration
             </h1>
             <br>
             <hr class="hr1">
         </div>
-        <div>
-            <div class="icons">
-                <button class="btn1">Grid view</button>
-                <button class="btn2">Column view</button>
+        <div class="action-call">
+            <div class="call">
+                <h2>Join Our Community of Innovators!</h2>
+                <p class="call-content">Become a catalyst for local growth and success.<br> Connect, network, and thrive with<br> Tesano's leading businesses.</p>
+                <a href="join.html" class="cta-button">Join Now <i class="fa fa-sign-in" aria-hidden="true" id="join-us"></i></a>
+            </div>
+            
+            <div class="action">
+                <P>
+                    YOU + US <br>
+                    Innovating Together.
+                </p>
             </div>
         </div>
-        <section>
-            <div class="cards grid-view">
+        <section class="Events">
+            <h2>Current Events</h2>
+            <div class="event-container">
+                <article class="event">
+                    <h3>Annual Business Expo</h3>
+                    <p>Join us for our annual expo showcasing Tesano’s top businesses and innovative ventures in the community.</p>
+                    <div class="date">
+                        <i class="fa fa-clock-o" aria-hidden="true" id="clock"></i>
+                        <p class="date">June 15, 2025</p>
+                    </div>
+                </article>
+                <article class="event">
+                    <h3>Digital Marketing Workshop</h3>
+                    <p>A hands-on workshop that explores the latest trends in digital marketing, specially designed for local entrepreneurs.</p>
+                    <div class="date">
+                        <i class="fa fa-clock-o" aria-hidden="true" id="clock"></i>
+                        <p class="date">July 2, 2025</p>
+                    </div>
+                </article>
+                <article class="event">
+                    <h3>Local Networking Night</h3>
+                    <p>Meet industry leaders and fellow business owners for an evening of networking and collaborative discussions.</p>
+                    <div class="date">
+                        <i class="fa fa-clock-o" aria-hidden="true" id="clock"></i>
+                        <p class="date">August 5, 2025</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-            </div> 
+        <section class="spot-light">
+            <h2>Company Spotlight</h2>
+            <div class="spotlight-container">
+                
+            </div>
+        </section>
+        
+        <section class="weather">
+            <p>
+                The current temperature in Tesano, Ghana is
+                <span id="current-temp"></span>
+              </p>
+              <figure>
+                <img id="weather-icon" src="" alt="" />
+                <figcaption id="weather-desc"></figcaption>
+              </figure>
+              <div class="forecast">
+                <h2>3-Day Forecast</h2>
+                <div id="forecast-container"></div>
+              </div>
         </section>
 
     </main>
@@ -110,7 +167,9 @@
         </div>
     </footer>
     <script type="module" src="modules/activeNav.mjs"></script>
-    <script src="scripts/directory.js"></script>
     <script type="module" src="modules/dateInfo.mjs"></script>
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

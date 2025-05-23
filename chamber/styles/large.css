@@ -411,3 +411,293 @@ footer {
 .highlight {
     background-color: #FFBF41 !important;
 }
+
+
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+.nav-links a.active {
+    color: blue;
+    font-weight: bold;
+    border-bottom: 2px solid blue;
+}
+
+
+.action-call {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+}
+
+.call {
+    text-align: left;
+    padding: 1em;
+    border-radius: 10px;
+    line-height: 25px;
+}
+
+.call .call-content{
+    background-color: whitesmoke;
+}
+
+.action-call .action {
+    width: 50%;
+    height: 200px;
+    background-color: #FFBF41;
+    color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.action p {
+    background-color: #FFBF41;
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+}
+
+
+.Events{
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.Events h2{
+    background-color: white;
+}
+
+.event-container{
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 10px;
+    background-color: white;
+}
+
+.event{
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.event h3,p{
+    background-color: white;
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.date p{
+    background-color: white;
+    font-weight: 600;
+}
+
+#clock{
+    font-size: x-large;
+    background-color: white;
+}
+
+#join-us{
+    color:black;
+    font-size: larger;
+    font-weight: 700;
+}
+
+
+.spot-light {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    margin: 10px ;
+}
+
+.spot-light > h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: #f8f9fa;
+}
+
+.spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.spotlight-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.spotlight-card img {
+    max-width: 200px;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.spotlight-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+.member-info {
+    text-align: left;
+    margin: 1rem 0;
+    background-color: white;
+}
+
+.member-info p {
+    margin: 0.5rem 0;
+}
+
+.member-info i {
+    margin-right: 0.5rem;
+    color: #666;
+    background-color: white;
+}
+
+.membership-level {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.membership-level.gold {
+    background-color: #ffd700;
+    color: #000;
+}
+
+.membership-level.silver {
+    background-color: #c0c0c0;
+    color: #000;
+}
+
+
+
+  .weather {
+    max-width: 100%;
+    margin: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+  }
+  
+  
+  .weather p {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  
+  
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    background-color: white;
+  }
+  
+  figure img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+    background-color: #1D5CCA;
+    border-radius: 10px;
+    
+  }
+  
+ 
+  .forecast {
+    margin-top: 30px;
+    background-color: white;
+  }
+  
+  .forecast h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+    background-color: white;
+  }
+  
+
+  #forecast-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #FFBF41;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  
+  .forecast-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  .forecast-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+    background-color: white;
+  }
+  
+  .forecast-item img {
+    width: 80px;
+    height: auto;
+    margin: 10px 0;
+    background-color: white;
+
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .forecast-item p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #555;
+    background-color: white;
+  }
