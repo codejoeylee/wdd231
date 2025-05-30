@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Chamber of Commerce - Connecting Local Businesses and Community">
+    <meta name="author" content="Benjamin Asante">
+    
+    <link rel="icon" type="image/png" href="my-favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="my-favicon/favicon.svg" />
+    <link rel="shortcut icon" href="my-favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="my-favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="my-favicon/site.webmanifest" />
+    
+    <meta property="og:title" content="Tesano chamber of commerce">
+    <meta property="og:description" content="Tesano chamber of commerce - Connecting Local Businesses and Community">
+    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="og:url" content="https://codejoeylee.github.io/wdd231/chamber/directory.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Join TGCC</title>
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.webp" loading="lazy" class="logo-img" alt="Directory Site Logo">
+                <h1 class="logo-name">Tesano chamber of commerce</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa fa-bars menu-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Grow Your Business <br> with the Chamber</h1>
+            <p>Unlock networking opportunities, exclusive resources, and community support.</p>
+            <br>
+            <a href="join.html" class="cta-button">Become a Member</a>
+        </div>
+    </div>
+    
+
+    <main class="container join-container">
+
+        <section class="membership-cards">
+            <div class="membership-card">
+                <h3>NP Membership</h3>
+                <p>For Non-Profit Organizations</p>
+                <p>Free</p>
+                <a href="#" onclick="openModal('np-modal')">Learn More</a>
+            </div>
+
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <p>Basic Benefits Package</p>
+                <p>$50/year</p>
+                <a href="#" onclick="openModal('bronze-modal')">Learn More</a>
+            </div>
+
+            <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <p>Enhanced Benefits Package</p>
+                <p>$100/year</p>
+                <a href="#" onclick="openModal('silver-modal')">Learn More</a>
+            </div>
+
+            <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <p>Premium Benefits Package</p>
+                <p>$250/year</p>
+                <a href="#" onclick="openModal('gold-modal')">Learn More</a>
+            </div>
+        </section>
+
+
+        <section class="form-section">
+            <h2>Join Our Chamber</h2>
+            <form method="get" action="thankyou.html">
+                <label for="firstname">
+                    First Name:
+                    <input type="text" id="firstname" name="firstname" required 
+                           title="Please enter your first name" 
+                           autocomplete="given-name">
+                </label>
+
+                <label for="lastname">
+                    Last Name:
+                    <input type="text" id="lastname" name="lastname" required 
+                           title="Please enter your last name" 
+                           autocomplete="family-name">
+                </label>
+
+                <label for="title">
+                    Title:
+                    <input type="text" id="title" name="title" 
+                           title="Please enter your title (minimum 7 characters, letters, hyphens, and spaces only)" 
+                           pattern="[A-Za-z- ]{7,}" 
+                           autocomplete="organization-title">
+                </label>
+
+                <label for="email">
+                    Email:
+                    <input type="email" id="email" name="email" required 
+                           title="Please enter your email address" 
+                           placeholder="example@domain.com" 
+                           autocomplete="email">
+                </label>
+
+                <label for="phone">
+                    Mobile Phone:
+                    <input type="tel" id="phone" name="phone" required 
+                           title="Please enter your mobile phone number" 
+                           autocomplete="tel">
+                </label>
+
+                <label for="business">
+                    Business/Organization Name:
+                    <input type="text" id="business" name="business" required 
+                           title="Please enter your business or organization name" 
+                           autocomplete="organization">
+                </label>
+
+                <label for="membership">
+                    Membership Level:
+                    <select id="membership" name="membership" required>
+                        <option value="">Select a membership level</option>
+                        <option value="np">NP Membership (Non-Profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="description">
+                    Business Description:
+                    <textarea id="description" name="description" 
+                              title="Please describe your business or organization"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+
+        
+
+        <!-- Modals -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('np-modal')">&times;</span>
+                <h2 class="modal-title">NP Membership Benefits</h2>
+                <ul>
+                    <li>Basic directory listing</li>
+                    <li>Networking events access</li>
+                    <li>Monthly newsletter</li>
+                    <li>Community involvement opportunities</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+                <h2 class="modal-title">Bronze Membership Benefits</h2>
+                <ul>
+                    <li>Enhanced directory listing</li>
+                    <li>Quarterly training sessions</li>
+                    <li>Social media mentions</li>
+                    <li>Basic event discounts</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+                <h2 class="modal-title">Silver Membership Benefits</h2>
+                <ul>
+                    <li>Premium directory listing</li>
+                    <li>Monthly training sessions</li>
+                    <li>Business spotlight opportunity</li>
+                    <li>Enhanced event discounts</li>
+                    <li>Advertising opportunities</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+                <h2 class="modal-title">Gold Membership Benefits</h2>
+                <ul>
+                    <li>Featured directory listing</li>
+                    <li>Weekly training sessions</li>
+                    <li>Priority business spotlight</li>
+                    <li>Maximum event discounts</li>
+                    <li>Premium advertising package</li>
+                    <li>Exclusive networking events</li>
+                    <li>Direct access to chamber leadership</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+      
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fa fa-map-marker"></i> Tesano, Accra, Ghana</p>
+                <p><i class="fa fa-phone"></i> +233 302 555 123</p>
+                <p><i class="fa fa-envelope"></i> info@chamber.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©<span id="currentyear"></span> 👨🏿‍🏫 Benjamin Asante Accra 〄 Ghana</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('timestamp').value = new Date().toISOString();
+
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
+    <script type="module" src="modules/activeNav.mjs"></script>
+    <script src="scripts/directory.js"></script>
+    <script type="module" src="modules/dateInfo.mjs"></script>
+</body>
+</html>

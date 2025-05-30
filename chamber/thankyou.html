@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your Chamber of Commerce - Connecting Local Businesses and Community">
+    <meta name="description" content="Thank you for joining Tesano Chamber of Commerce">
     <meta name="author" content="Benjamin Asante">
-    
     
     <link rel="icon" type="image/png" href="my-favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="my-favicon/favicon.svg" />
@@ -13,22 +12,17 @@
     <link rel="apple-touch-icon" sizes="180x180" href="my-favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="MyWebSite" />
     <link rel="manifest" href="my-favicon/site.webmanifest" />
-    
-    
-    <meta property="og:title" content="Tesano chamber of commerce">
-    <meta property="og:description" content="Tesano chamber of commerce - Connecting Local Businesses and Community">
-    <meta property="og:image" content="/images/og-image.jpg">
-    <meta property="og:url" content="https://codejoeylee.github.io/wdd231/chamber/directory.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <title>TGCC</title>
+    <title>Thank You - TGCC</title>
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/small.css">
-    <script src="scripts/directory-filter.js" defer></script>
+    <link rel="stylesheet" href="styles/join.css">
+    
 </head>
 <body>
     <header>
@@ -48,35 +42,17 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Your <br>Chamber of Commerce</h1>
-                <p>Connecting Local Businesses and Community</p>
-                <br>
-                <a href="join.html" class="cta-button">Join Now</a>
-            </div>
-        </div>
-        <div class="business-theme">
-            <h1>
-                Explore the best <br> businesses in our community, dedicated <br> to quality service and local growth.
-            </h1>
-            <br>
-            <hr class="hr1">
-        </div>
-        <div>
-            <div class="icons">
-                <button class="btn1">Grid view</button>
-                <button class="btn2">Column view</button>
-            </div>
-        </div>
-        <section>
-            <div class="cards grid-view">
 
-            </div> 
-        </section>
-
+    <main class="container thank-you-container">
+        <h2>Thank You for Joining!</h2>
+        <p>We appreciate your interest in becoming a member of the Tesano Chamber of Commerce. We have received your application and will process it shortly.</p>
+        
+        <div class="form-data">
+            <h3>Your Submission Details:</h3>
+            <div id="formDataDisplay"></div>
+        </div>
     </main>
+
     <footer>
         <div class="footer-container">
             <div class="footer-section">
@@ -111,6 +87,7 @@
     </footer>
     <script type="module" src="modules/activeNav.mjs"></script>
     <script src="scripts/directory.js"></script>
+    <script type="module" src="modules/thankyou.mjs"></script>
     <script type="module" src="modules/dateInfo.mjs"></script>
 </body>
 </html>
