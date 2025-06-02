@@ -168,3 +168,25 @@
         gap: 2rem;
     }
 }
+
+
+
+
+@media screen and (max-width: 640px) {
+    .discover-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .discover-card img {
+        height: 150px;
+    }
+
+    .discover-card:hover {
+        transform: none;
+    }
+
+    .discover-card:hover img {
+        filter: none;
+    }
+}

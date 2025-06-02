@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "name": "Tesano Sports Club",
+            "address": "Tesano, Accra, Ghana",
+            "description": "A premier sports facility offering tennis courts, swimming pools, and fitness programs for members and visitors.",
+            "image": "images/TesanoSport.webp"
+        },
+        {
+            "name": "Ghana Technology University College",
+            "address": "Tesano, Accra, Ghana",
+            "description": "A leading university in Ghana providing quality education in technology and business studies.",
+            "image": "images/GTUC.webp"
+        },
+        {
+            "name": "Crystal Palm Hotel",
+            "address": "Tesano, Accra, Ghana",
+            "description": "A well-known hotel offering comfortable accommodations, conference facilities, and fine dining.",
+            "image": "images/crystal.webp"
+        },
+        {
+            "name": "Papaye Fast Food",
+            "address": "Tesano, Accra, Ghana",
+            "description": "A popular restaurant serving delicious Ghanaian and continental dishes in a relaxed setting.",
+            "image": "images/papaye.webp"
+        },
+        {
+            "name": "Tesano Baptist Church",
+            "address": "Tesano, Accra, Ghana",
+            "description": "A vibrant Christian community offering worship services, youth programs, and outreach initiatives.",
+            "image": "images/tesanoBaptist.webp"
+        },
+        {
+            "name": "Harvest Chapel",
+            "address": "Tesano, Accra, Ghana",
+            "description": "A dynamic and welcoming church offering worship services, bible studies, and community outreach programs.",
+            "image": "images/harvest.webp"
+        },
+        {
+            "name": "ZooZoo Pub",
+            "address": "Tesano, Accra, Ghana",
+            "description": "A lively pub offering great music, drinks, and a welcoming atmosphere for social gatherings.",
+            "image": "images/zoozoo.webp"
+        },
+        {
+            "name": "Tesano Police Station",
+            "address": "Tesano, Accra, Ghana",
+            "description": "A key security establishment ensuring law enforcement and safety within the Tesano community.",
+            "image": "images/tesanoPolice.webp"
+        }
+    ]
+}
