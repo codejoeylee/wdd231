@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STI Aware Site Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ash-color: #B2BEB5;
+            --black-color: #000000;
+            --whitesmoke-color: #F5F5F5;
+            --primary-heading-color: var(--ash-color);
+            --secondary-text-color: var(--black-color);
+            --document-background: var(--whitesmoke-color);
+            --section-background: #FFFFFF;
+            --border-color: #E0E0E0;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--document-background);
+            color: var(--secondary-text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: var(--section-background);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 900px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--primary-heading-color);
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: var(--black-color);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: var(--secondary-text-color);
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .answer-section {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            background-color: var(--document-background);
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ccc;
+            vertical-align: middle;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+
+        .color-description {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .wireframe-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .wireframe-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 1.1em;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .wireframe-container {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .wireframe-container img {
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>STI Aware Site Plan Document</h1>
+
+        <div class="answer-section">
+            <h2> Site Name</h2>
+            <p>"STI Aware" <br> The reason given is that this will be an "easy-to-use website that helps people learn about Sexually Transmitted Infections (STIs)."</p>
+        </div>
+
+        <div class="answer-section">
+            <h2> Site Purpose</h2>
+            <p>The site purpose lists multiple objectives that describe the services and information to be provided:</p>
+            <ul>
+                <li>Share Clear Information – Help people understand STIs and make smart health choices.</li>
+                <li>Encourage Prevention – Teach ways to stay safe, like using protection and getting vaccines.</li>
+                <li>Reduce Fear & Shame – Help people feel comfortable discussing sexual health without judgment.</li>
+                <li>Support Testing & Treatment – Show why testing early is important and where to get help.</li>
+            </ul>
+        </div>
+
+        <div class="answer-section">
+            <h2> Scenarios</h2>
+            <ul>
+                <li><strong>Scenario 1:</strong> A young adult, Alex, who recently became sexually active, feels confused about the different types of STIs they've heard about. They are looking for a reliable and easy-to-understand source of information to learn about symptoms, risks, and how to protect themselves without feeling judged or embarrassed.</li>
+                <li><strong>Scenario 2:</strong> Imani suspects they might have been exposed to an STI but feels nervous and unsure about getting tested. They are looking for information on where they can get tested confidentially in their area and what the testing process involves. They also want to understand what their options are if they test positive.</li>
+            </ul>
+        </div>
+
+        <div class="answer-section">
+            <h2> Color Schema</h2>
+            <ul>
+                <li class="color-description"><span class="color-box" style="background-color: var(--ash-color);"></span>Primary Color: Ash (<code>#B2BEB5</code>) - To be used for main headings, key navigation elements, and accents.</li>
+                <li class="color-description"><span class="color-box" style="background-color: var(--black-color);"></span>Secondary Color: Black (<code>#000000</code>) - To be used for primary body text and strong visual elements.</li>
+                <li class="color-description"><span class="color-box" style="background-color: var(--whitesmoke-color);"></span>Background Color: White (or Whitesmoke) (<code>#F5F5F5</code>) - To be used as the main background for readability.</li>
+                <li class="color-description"><span class="color-box" style="background-color: var(--black-color);"></span>Accent Color: Black (<code>#000000</code>) - Can also be used for emphasis, such as button text or dividers.</li>
+            </ul>
+        </div>
+
+        <div class="answer-section">
+            <h2> Color Schema Use in Document</h2>
+            <p>The colors listed above (Ash, Black, White/Whitesmoke) are used to style this site plan document itself to provide a visual representation of the intended website design.</p>
+        </div>
+
+        <div class="answer-section">
+            <h2> Typography Named and Used</h2>
+            <ul>
+                <li>Primary Font: Satoshi </li>
+                <li>Secondary Font: Space Grotesk (Applied to the main body text and general elements to ensure readability.)</li>
+            </ul>
+            <p>These fonts are used throughout this site plan document to demonstrate the intended typography for the website.</p>
+        </div>
+
+        <div class="answer-section">
+            <h2> Wireframe</h2>
+            <p>This is the mobile and desktop wireframes:</p>
+            <div class="wireframe-container">
+                <img src="images/mobile.webp" alt="Placeholder for Mobile Wireframe">
+                <img src="images/desktop.webp" alt="Placeholder for Desktop Wireframe">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
