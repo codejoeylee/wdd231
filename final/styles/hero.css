@@ -1,0 +1,92 @@
+.hero {
+    margin: -9px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: bold;
+    line-height: 1.5;
+    height: 300px;
+    background-image:
+            linear-gradient(to right, rgba(255, 182, 193, 0.3) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(173, 216, 230, 0.3) 1px, transparent 1px);
+    background-size: 20px 20px; /* Controls box size */
+    background-color: #ffffff;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.hero-content h1,
+.hero-content p {
+    color: #333;
+}
+
+.hero-content p{
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.text-gradient-shadow {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333333;
+    text-shadow:
+        2px 2px 5px hotpink,
+        -2px -2px 5px #d3d3d3,
+        4px 4px 10px #a9a9a9;
+}
+
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    color: black;
+}
+
+.hero-content p {
+    font-weight: 600;
+    padding-top: 5px;
+    font-size: x-large;
+}
+
+
+.cta-button {
+    display: inline-block;
+    margin: 10px 8px 10px 10px;
+    padding: 0.55em 8px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0.1rem;
+        line-height: 1.3;
+        height: 400px;
+    }
+
+    .hero-content h1{
+        font-size: 1.5rem;
+    }
+
+    .cta-button {
+        margin: 8px 5px 8px 8px;
+    }
+
+}
