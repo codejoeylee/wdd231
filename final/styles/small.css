@@ -4,15 +4,15 @@ body {
 
 }
 
-.bgGrid{
+.bgGrid {
     background-size: 40px 40px;
-    background-image: linear-gradient(to right, #eef2ff 1px, transparent 1px),linear-gradient(to bottom, #eef2ff 1px, transparent 1px) ;
+    background-image: linear-gradient(to right, #eef2ff 1px, transparent 1px), linear-gradient(to bottom, #eef2ff 1px, transparent 1px);
 }
 
-.bgcolor{
+.bgcolor {
     background-image:
-            linear-gradient(to right, rgba(255, 192, 203, 0.3) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(255, 192, 203, 0.3) 1px, transparent 1px);
+        linear-gradient(to right, rgba(255, 192, 203, 0.3) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 192, 203, 0.3) 1px, transparent 1px);
     background-color: #ffffff;
 }
 
@@ -21,9 +21,9 @@ body {
     font-weight: bold;
     color: black;
     text-shadow:
-            2px 2px 5px #ff69b4,
-            -2px -2px 5px #ffffff,
-            4px 4px 10px #add8e6;
+        2px 2px 5px #ff69b4,
+        -2px -2px 5px #ffffff,
+        4px 4px 10px #add8e6;
 }
 
 .Highlight {
@@ -36,65 +36,65 @@ body {
     color: #666666;
 }
 
-.section-text{
+.section-text {
     text-align: center;
     font-size: xxx-large;
     font-weight: 600;
-    margin: 5px 90px 0 ;
+    margin: 5px 90px 0;
     padding: 10px;
 }
 
-.section-title{
+.section-title {
     text-align: center;
     font-size: xxx-large;
     font-weight: 600;
 }
 
 
-.font-fam{
+.font-fam {
     font-family: "Press Start 2P", system-ui;
 }
 
-.font-p{
+.font-p {
     font-size: medium;
     font-weight: 500;
 }
 
-.font-p-l{
+.font-p-l {
     font-size: large;
     font-weight: 600;
 }
 
-.font-p-left{
+.font-p-left {
     font-size: medium;
     font-weight: 600;
     text-align: center;
 }
 
-.video-text h2{
+.video-text h2 {
     font-size: xxx-large;
     font-weight: 600;
     text-align: center;
 }
 
-.bg-color-v{
+.bg-color-v {
     background: linear-gradient(45deg, #ff5733, #ffbd69);
 }
 
-.bg-color-v2{
+.bg-color-v2 {
     background-image: linear-gradient(to top, #e8198b 0%, #c7eafd 100%);
 }
 
-.bg-color-d{
-    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+.bg-color-d {
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
     background-blend-mode: screen;
 }
 
-.mt-0{
+.mt-0 {
     margin-top: 0;
 }
 
-.pd{
+.pd {
     padding: 10px;
 }
 
@@ -135,8 +135,15 @@ body {
 
 
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(10px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .gradient-shadow {
@@ -144,9 +151,9 @@ body {
     font-weight: bold;
     color: #333333;
     text-shadow:
-            2px 2px 5px hotpink,
-            -2px -2px 5px #d3d3d3,
-            4px 4px 10px #a9a9a9;
+        2px 2px 5px hotpink,
+        -2px -2px 5px #d3d3d3,
+        4px 4px 10px #a9a9a9;
 }
 
 
@@ -184,7 +191,7 @@ body {
     transform: translateX(100%);
 }
 
-.sidepanel  {
+.sidepanel {
     width: 0;
     position: fixed;
     z-index: 1;
@@ -240,10 +247,10 @@ body {
 
 
 .openbtn:hover {
-    background-color:#444;
+    background-color: #444;
 }
 
-.logo-text{
+.logo-text {
     font-size: x-large;
     cursor: pointer;
     font-weight: bold;
@@ -251,11 +258,11 @@ body {
     text-align: center;
 }
 
-.large{
+.large {
     display: none;
 }
 
-.hr1{
+.hr1 {
     color: black;
     font-weight: 500;
     height: 2px;
@@ -269,12 +276,12 @@ body {
     aspect-ratio: 16/9;
 }
 
-.video{
+.video {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px ;
+    padding: 20px;
     margin: 0;
 }
 
@@ -353,20 +360,20 @@ body {
 
 
 
-.text-rl{
+.text-rl {
     font-size: x-large;
     font-weight: 700;
     text-align: center;
     padding: 5px;
 }
 
-.hr-r{
+.hr-r {
     color: black;
-    width: 60% ;
+    width: 60%;
     font-weight: 500;
     height: 4px;
     background-color: black;
-    margin-right:0 ;
+    margin-right: 0;
 }
 
 
@@ -374,11 +381,12 @@ body {
 
     text-align: center;
 }
+
 img {
     vertical-align: middle;
 }
 
-.slide-img{
+.slide-img {
     width: 100px;
     height: 200px;
 
@@ -392,7 +400,8 @@ img {
     border-radius: 20px;
 }
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -412,8 +421,9 @@ img {
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .text {
@@ -445,7 +455,8 @@ img {
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: #717171;
 }
 
@@ -455,12 +466,22 @@ img {
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
 }
 
 
@@ -507,19 +528,19 @@ img {
     background-color: #0056b3;
 }
 
-.hero-2{
+.hero-2 {
     height: 200px;
     margin: -20px 0 -9px 0;
     background-image:
-            linear-gradient(to right, rgba(255, 182, 193, 0.3) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(173, 216, 230, 0.3) 1px, transparent 1px);
+        linear-gradient(to right, rgba(255, 182, 193, 0.3) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(173, 216, 230, 0.3) 1px, transparent 1px);
     background-size: 20px 20px;
     background-color: #ffffff;
     align-items: center;
 }
 
-.hero-text2{
-    padding-top:50px;
+.hero-text2 {
+    padding-top: 50px;
     font-size: 30px;
     font-family: "Press Start 2P", system-ui;
     color: black;
@@ -580,8 +601,13 @@ img {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -684,7 +710,8 @@ img {
     color: black;
 }
 
-.join-form input, .join-form select {
+.join-form input,
+.join-form select {
     width: 90%;
     padding: 10px;
     margin-top: 5px;
@@ -709,7 +736,7 @@ img {
 
 
 .closebtn {
-    background: inherit; 
+    background: black;
     color: white;
     font-size: 24px;
     font-weight: bold;
