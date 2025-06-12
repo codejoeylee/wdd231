@@ -34,8 +34,7 @@ function renderFacts() {
 
     facts.forEach(fact => {
         const factBox = document.createElement('div');
-        factBox.classList.add('fact-box'); // Initially hidden
-
+        factBox.classList.add('fact-box'); 
         const factImage = document.createElement('img');
         factImage.src = fact.image;
         factImage.alt = fact.fact;
@@ -63,7 +62,7 @@ function observeFacts() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add("show"); // Apply animation
+                entry.target.classList.add("show"); 
             }
         });
     }, { threshold: 0.3 });

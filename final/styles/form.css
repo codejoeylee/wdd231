@@ -16,6 +16,14 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
+.form-results > p{
+    color:#1c1c1c;
+}
+
+h3{
+    color:#1c1c1c;
+}
+
 .form-results:hover {
     transform: scale(1.02);
 }
@@ -66,7 +74,7 @@ ul li a:hover {
 
 
 button {
-    background-color: #ff69b4;
+    background-color: #1c1c1c;
     color: white;
     padding: 12px 20px;
     border: none;

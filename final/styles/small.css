@@ -102,7 +102,7 @@ body {
 .hl-text {
     font-size: 20px;
     font-weight: 500;
-    color: #fff;
+    color: #333;
     padding: 15px;
     text-align: left;
     line-height: 2;
@@ -299,7 +299,7 @@ body {
 }
 
 .cta-btn {
-    background: #fff;
+    background: black;
     color: #ff5733;
     font-size: 18px;
     padding: 12px 24px;
@@ -399,7 +399,7 @@ img {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -424,7 +424,6 @@ img {
     bottom: 8px;
     width: 100%;
     text-align: center;
-    opacity: 50%;
 }
 
 .numbertext {
@@ -487,7 +486,7 @@ img {
 }
 
 .health-prevention article h3 {
-    color: hotpink;
+    color: palevioletred;
 }
 
 .health-prevention article p {
@@ -496,8 +495,8 @@ img {
 
 .test-button {
     display: inline-block;
-    background-color: hotpink;
-    color: white;
+    background-color: palevioletred;
+    color: black;
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
@@ -545,7 +544,7 @@ img {
 }
 
 .about-sti-aware h3 {
-    color: hotpink;
+    color: #333;
     font-size: 22px;
     margin-top: 30px;
     font-family: "Press Start 2P", system-ui;
@@ -569,7 +568,7 @@ img {
     background: white;
     padding: 12px;
     margin: 8px 0;
-    border-left: 5px solid #333333;
+    border-left: 5px solid pink;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -588,8 +587,8 @@ img {
 
 #open-modal {
     display: inline-block;
-    background-color: hotpink;
-    color: white;
+    background-color: palevioletred;
+    color: black;
     padding: 12px 18px;
     border: none;
     border-radius: 5px;
@@ -682,7 +681,7 @@ img {
     display: block;
     margin-top: 10px;
     font-weight: bold;
-    color: #333;
+    color: black;
 }
 
 .join-form input, .join-form select {
@@ -706,4 +705,27 @@ img {
 
 .join-form button:hover {
     background-color: hotpink;
+}
+
+
+.closebtn {
+    background: inherit; 
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+
+.closebtn-container {
+    position: fixed;
+    top: 8px;
+    right: 8px;
 }
