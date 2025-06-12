@@ -1,9 +1,6 @@
-// youtube-player-async.js
 
-// 1. Return a Promise that resolves when the API is ready
 function loadYouTubeIframeAPI() {
     return new Promise((resolve, reject) => {
-        // YouTube will call this global function once it’s loaded
         window.onYouTubeIframeAPIReady = () => {
             if (window.YT && window.YT.Player) {
                 resolve(window.YT);
@@ -12,7 +9,7 @@ function loadYouTubeIframeAPI() {
             }
         };
 
-        // Inject the script
+
         const tag = document.createElement('script');
         tag.src = "https://www.youtube.com/iframe_api";
         tag.onerror = () => reject(new Error('Failed to load YouTube API script'));
@@ -20,17 +17,17 @@ function loadYouTubeIframeAPI() {
     });
 }
 
-// 2. Await that Promise before using YT.Player
+
 async function initYouTubePlayer() {
     try {
         const YT = await loadYouTubeIframeAPI();
         new YT.Player('player', {
             videoId: 'vYtV_Hf29RE',
             playerVars: {
-                rel:           0,   // no related videos
-                controls:      1,   // show controls
-                modestbranding:1,   // minimal YouTube logo
-                autoplay:      0    // don’t autoplay
+                rel:           0,
+                controls:      1,
+                modestbranding:1,
+                autoplay:      0
             }
         });
     }
@@ -39,6 +36,6 @@ async function initYouTubePlayer() {
     }
 }
 
-// 3. Kick it off
+
 initYouTubePlayer();
 

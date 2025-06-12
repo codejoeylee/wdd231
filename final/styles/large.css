@@ -68,4 +68,70 @@
         width: 50%;
         height: auto;
     }
+
+    .section-text{
+        text-align: left;
+        font-size: xxx-large;
+        font-weight: 600;
+        margin: 5px 30px 0 ;
+    }
+
+    .section-title{
+        text-align: left;
+        font-size: xxx-large;
+        font-weight: 600;
+    }
+
+
+    .font-p-left{
+        font-size: x-large;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .hero-text2{
+        font-size: 80px;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 40px ;
+    }
+
+    .hero-2{
+        margin-top: -55px ;
+        height: 300px;
+    }
+
+    .slide-img{
+        width: 200px;
+        height: 300px;
+    }
+
+    .text-rl{
+        font-size: xxx-large;
+        font-weight: 700;
+        padding: 10px;
+    }
+
+
+
+    .cta-btn{
+        display: flex;
+        justify-content: start;
+        align-content: start;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .about-sti-aware {
+        padding: 20px;
+    }
+
+    .about-sti-aware h2 {
+        font-size: 24px;
+    }
+
+    .about-sti-aware ul li {
+        font-size: 14px;
+    }
 }

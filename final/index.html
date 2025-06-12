@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page purpose -  Course Home Page">
+    <meta name="description" content="Page purpose -  STI AWARE Home Page">
     <meta name="author" content="Benjamin Asante">
 
 
@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="../final/styles/small.css">
     <link rel="stylesheet" href="../final/styles/large.css">
     <link rel="stylesheet" href="../final/styles/hero.css">
+
 </head>
 <body class="bgcolor">
     <header>
@@ -44,17 +45,15 @@
         </div>
         <nav class="large">
             <ul class="menulist">
-                <li><a href="#" id="sti"> Health & Prevention </a></li>
-                <li><a href="#" id="sti"> About STI Aware</a></li>
-                <li><a href="#" id="sti"> Why It Matters </a></li>
+                <li><a href="Health.html" id="sti"> Health & Prevention </a></li>
+                <li><a href="About.html" id="sti"> About STI Aware</a></li>
             </ul>
         </nav>
         <nav class="small">
             <div id="mySidepanel" class="sidepanel">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#" id="sti"> Health & Prevention </a>
-                <a href="#" id="sti"> About STI Aware</a>
-                <a href="#" id="sti"> Why It Matters </a>
+                <a href="Health.html" id="sti"> Health & Prevention </a>
+                <a href="About.html" id="sti"> About STI Aware</a>
             </div>
             <button class="openbtn" onclick="openNav()">&#9776;</button>
         </nav>
@@ -67,31 +66,81 @@
             <h1 class="text-gradient-shadow">Stay Informed, Stay Safe</h1>
             <p>Empowering you with knowledge to prevent, test, and talk openly about STIs.</p>
             <br>
-            <a href="learn.html" class="cta-button lightShadow">Learn More</a>
+            <a href="Health.html" class="cta-button lightShadow">Learn More</a>
         </div>
     </div>
 
     <hr class="hr1">
 
     <main>
-        <div class="video">
-            <section class="video-text">
-                <h2>STI Awareness</h2>
-                <p></p>
-            </section>
-            <section id="player">
+        <div class="bg-color-v2">
+            <h2 class="section-text Highlight">What is an  STI?</h2>
+            <div class="video">
+                <section class="video-text">
+                    <p class="hl-text">
+                        Sexually Transmitted Infections (STIs) are infections that spread through sexual contact.
+                        They can be caused by bacteria, viruses, or parasites and may affect anyone, regardless of age or background.
+                        Some common STIs include chlamydia, gonorrhea, syphilis, and HIV.
+                        Early detection and prevention—through safe practices, regular testing, and education—are key to maintaining sexual health.
+                    </p>
+                </section>
+                <section id="player">
 
-            </section>
+                </section>
+            </div>
         </div>
+
+        <hr class="hr1">
+
+        <section class="awareness-section">
+            <h2 class="section-title">Why STI Awareness Matters</h2>
+            <p class="font-p font-p-left">
+                Understanding STIs is crucial for maintaining sexual health. Many infections can be prevented, treated, or managed with the right knowledge.
+                Let's break the stigma and empower ourselves with information.
+            </p>
+        </section>
+
+        <hr class="hr1">
+
+        <section class="facts-section">
+            <h2 class="section-title font-fam">Quick STI Facts</h2>
+            <div class="facts-grid" id="facts-container">
+
+            </div>
+        </section>
+
+
+        <hr class="hr1">
+
+        <section class="cta-section">
+            <h2 class="section-title">Take Charge of Your Health</h2>
+            <p class="font-p font-p-left">Regular STI testing and safe practices help protect you and your partners.</p>
+            <button class="cta-btn lightShadow font-p-left" onclick="window.open('https://www.freetest.me/', '_blank')">Find a Testing Center</button>
+        </section>
+
 
     </main>
 
     <hr class="hr1">
 
-    <footer>
-        
+
+    <footer class="site-footer">
+        <p>&copy; 2025 STI Aware. All Rights Reserved.</p>
+        <nav>
+            <a href="About.html">About</a>
+            <a href="Health.html">Resources</a>
+        </nav>
+        <p>Email: info@stiaware.com | Call: +233 123 456 789</p>
     </footer>
-    <script src="scripts/main.js"></script>
+
+
+
+
     <script src="scripts/Youtube-Api.js"></script>
+    <script src="scripts/main.js"></script>
+    <script type="module" src="modules/facts.mjs"></script>
+
+
+
 </body>
 </html>

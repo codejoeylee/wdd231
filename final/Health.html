@@ -1,10 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page purpose -  STI AWARE -Health & Prevention page">
+    <meta name="author" content="Benjamin Asante">
+
+
+    <meta property="og:title" content="STI Aware: Empowering Health Through Knowledge and Prevention">
+    <meta property="og:description" content="Empowering you with clear, helpful information about STIs—prevention, testing, and breaking stigma.">
+    <meta property="og:image" content="https://yourwebsite.com/images/STI_Aware_Home.png">
+    <meta property="og:url" content="https://yourwebsite.com/">
+
+
+
+
+    <!-- My favicon -->
+    <link rel="icon" type="image/png" href="/final/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/final/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/final/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/final/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/final/favicon/site.webmanifest" />
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>WDD 231 Portfolio</title>
+
+    <link rel="stylesheet" href="../final/styles/small.css">
+    <link rel="stylesheet" href="../final/styles/large.css">
+    <link rel="stylesheet" href="../final/styles/hero.css">
 </head>
-<body>
-$END$
+<body class="bgcolor">
+<header>
+    <div class="header-logo">
+        <p class="logo-text" onclick="window.location.href='index.html'">STI Aware</p>
+    </div>
+    <nav class="large">
+        <ul class="menulist">
+            <li><a href="Health.html" id="sti"> Health & Prevention </a></li>
+            <li><a href="About.html" id="sti"> About STI Aware</a></li>
+        </ul>
+    </nav>
+    <nav class="small">
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Health.html" id="sti"> Health & Prevention </a>
+            <a href="About.html" id="sti"> About STI Aware</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </nav>
+</header>
+
+<hr class="hr1">
+
+<div class="hero-2">
+    <h1 class="hero-text2 gradient-shadow">
+        Heath & <br>Prevention
+    </h1>
+</div>
+
+<main>
+    <div class="bg-color-v">
+        <hr class="hr1">
+        <p class="text-rl">
+            Types of STIs
+        </p>
+
+        <div class="slideshow-container bg-color-d">
+
+            <div class="mySlides fade">
+                <div class="numbertext">Chlamydia</div>
+                <br>
+                <img src="images/chlamydia@2x.webp" class="slide-img" style="width:40%" alt="Chlamydia Image">
+                <p class="font-p-l centered pd">Chlamydia is a bacterial STI that can cause pain, discharge, and complications if left untreated. It is commonly spread through unprotected sex.</p>
+                <br>
+                <div class="text">Chlamydia can be treated with antibiotics.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">Gonorrhea</div>
+                <br>
+                <img src="images/gonorrhea.webp" class="slide-img" style="width:40%" alt="Gonorrhea Image">
+                <p class="font-p-l centered pd">Gonorrhea is a bacterial infection that affects the reproductive tract and other parts of the body. Symptoms may include painful urination and abnormal discharge.</p>
+                <br>
+                <div class="text">Early treatment is essential to prevent complications.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">Syphilis</div>
+                <br>
+                <img src="images/syphilis-alt@2x.webp" class="slide-img" style="width:40%" alt="Syphilis Image">
+                <p class="font-p-l centered pd">Syphilis is a bacterial STI that progresses in stages. If untreated,it can lead to serious health issues, including neurological and cardiovascular problems.</p>
+                <br>
+                <div class="text">Syphilis is curable with appropriate antibiotics.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">HPV (Human Papillomavirus)</div>
+                <img src="images/hpv@2x.webp" class="slide-img"  alt="HPV Image">
+                <p class="font-p-l centered pd">HPV is a viral STI that can cause genital warts and increase the risk of certain cancers.Many strains have no symptoms but can still be transmitted.</p>
+                <br>
+                <br>
+                <div class="text">Vaccination is available to prevent HPV infection.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">Herpes</div>
+                <img src="images/sti@2x.webp" class="slide-img" style="width:40%" alt="Herpes Image">
+                <p class="font-p-l centered pd">Herpes is a viral STI that causes recurrent outbreaks of painful sores. It spreads through skin-to-skin contact, including kissing and sexual activities.</p>
+                <br>
+                <br>
+                <div class="text">While there is no cure, antiviral medications help manage outbreaks.</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <hr class="hr1">
+
+    <section class="health-prevention">
+        <h2>Health & Prevention</h2>
+
+        <article class="safety">
+            <h3>How to Stay Safe</h3>
+            <p>Many STIs are manageable, and some can be completely cured. The key is early testing and following a proper treatment plan.</p>
+
+            <p>Bacterial infections, such as chlamydia, gonorrhea, and syphilis, are typically treated with antibiotics. Completing the prescribed course is crucial, even if symptoms fade early. Avoiding sexual activity until your doctor gives the all-clear helps prevent reinfection.</p>
+
+            <p>For viral infections like herpes, HIV, and hepatitis B, while there’s no cure, medications can help reduce symptoms and lower transmission risks. With the right care, individuals can maintain good health and lead full lives.</p>
+
+            <p>Parasitic infections, like trichomoniasis, are often resolved with a single dose of prescribed medication.</p>
+
+            <p>Partner testing and treatment are essential to prevent reinfection and further spread. Follow-up testing may be needed to confirm the infection has cleared.</p>
+
+            <p>Avoid self-diagnosis or home remedies—STIs require professional medical evaluation and treatment. If diagnosed, seek proper care without fear or shame. Protecting your health is the best decision for both you and your partner.</p>
+
+            <h3>The HPV Vaccine: A Strong Line of Defense</h3>
+            <p>Human papillomavirus (HPV) is one of the most common but preventable STIs. While most cases clear naturally, high-risk strains contribute to serious health conditions like cervical, throat, and anal cancer.</p>
+
+            <p>The HPV vaccine provides excellent protection against these harmful strains. It’s recommended for preteens, ideally at ages 11–12, but can be administered as early as nine. Individuals up to 26 years old should consider getting vaccinated if they haven’t already. In some cases, adults up to 45 may benefit based on their health history and risk factors.</p>
+
+            <p>Even if exposed to one strain, the vaccine can still protect against others. Safe and effective, it plays a crucial role in cancer prevention. If uncertain about its suitability, consult a healthcare provider to explore its benefits.</p>
+        </article>
+
+
+        <article class="testing">
+            <h3>Getting Tested</h3>
+            <p>Regular STI testing is key to staying healthy and protecting yourself and your partners. Early detection allows for quick treatment, reducing risks and preventing transmission.</p>
+
+            <p>Testing is simple, confidential, and widely available. You can visit local clinics, pharmacies, or online resources to find a testing site near you.</p>
+
+            <p>Want to find free and convenient testing? Click below:</p>
+            <a href="https://www.freetest.me/" class="test-button" target="_blank">Find a Free Test</a>
+        </article>
+
+
+        <article class="living-with-sti">
+            <h3>Living with an STI</h3>
+            <p>If you’ve been diagnosed with an STI, there are effective treatments and management strategies available. Talk to a healthcare provider for the best options. Being open with partners about your diagnosis fosters trust and responsible health practices.</p>
+        </article>
+    </section>
+
+</main>
+
+<hr class="hr1">
+
+
+<footer class="site-footer">
+    <p>&copy; 2025 STI Aware. All Rights Reserved.</p>
+    <nav>
+        <a href="About.html">About</a>
+        <a href="Health.html">Resources</a>
+    </nav>
+    <p>Email: info@stiaware.com | Call: +233 123 456 789</p>
+</footer>
+
+
+<script src="scripts/main.js"></script>
+<script src="scripts/Youtube-Api.js"></script>
+<script type="module" src="modules/facts.mjs"></script>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
 </body>
 </html>

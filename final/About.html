@@ -2,9 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page purpose - STI AWARE - About Sti Aware page">
+  <meta name="author" content="Benjamin Asante">
+
+
+  <meta property="og:title" content="STI Aware: Empowering Health Through Knowledge and Prevention">
+  <meta property="og:description" content="Empowering you with clear, helpful information about STIs—prevention, testing, and breaking stigma.">
+  <meta property="og:image" content="https://yourwebsite.com/images/STI_Aware_Home.png">
+  <meta property="og:url" content="https://yourwebsite.com/">
+
+
+
+
+  <!-- My favicon -->
+  <link rel="icon" type="image/png" href="/final/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/final/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/final/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/final/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/final/favicon/site.webmanifest" />
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <title>WDD 231 Portfolio</title>
+
+  <link rel="stylesheet" href="../final/styles/small.css">
+  <link rel="stylesheet" href="../final/styles/large.css">
+  <link rel="stylesheet" href="../final/styles/hero.css">
 </head>
-<body>
-$END$
+<body class="bgcolor">
+<header>
+  <div class="header-logo">
+    <p class="logo-text" onclick="window.location.href='index.html'">STI Aware</p>
+  </div>
+  <nav class="large">
+    <ul class="menulist">
+      <li><a href="Health.html" id="sti"> Health & Prevention </a></li>
+      <li><a href="About.html" id="sti"> About STI Aware</a></li>
+    </ul>
+  </nav>
+  <nav class="small">
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="Health.html" id="sti"> Health & Prevention </a>
+      <a href="About.html" id="sti"> About STI Aware</a>
+    </div>
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+  </nav>
+</header>
+
+<hr class="hr1">
+
+<div class="hero-2">
+  <h1 class="hero-text2 gradient-shadow">
+    About Sti<br>Aware
+  </h1>
+</div>
+
+<main>
+
+  <hr class="hr1">
+  <section class="about-sti-aware">
+    <h2>About STI Aware</h2>
+    <p>STI Aware is your go-to platform for accurate, stigma-free information on sexually transmitted infections (STIs), prevention, testing, and treatment. Our mission is to empower individuals with knowledge, promote safe health practices, and foster open conversations that drive positive change.</p>
+
+    <h3>Why Sexual Health Education Matters</h3>
+    <p>Understanding STIs, their transmission, and prevention methods helps individuals make informed health choices. Education is key to reducing risks and improving overall well-being.</p>
+
+    <h3>Destigmatizing Sexual Health</h3>
+    <p>STIs are common, yet misinformation fuels fear and shame. The reality? Sexual health is just health.
+      No one should feel embarrassed about seeking care or discussing prevention. STI Aware works to normalize these conversations and empower people to take control of their health.</p>
+
+    <h3>How You Can Stay Proactive</h3>
+    <ul>
+      <li>Routine Testing: Regular STI checkups ensure early detection and proper treatment.</li>
+      <li>Safe Practices: Use condoms, dental dams, and preventive medications to lower risk.</li>
+      <li>Open Conversations: Honest discussions with partners build trust and awareness.</li>
+      <li>Education & Advocacy: Sharing knowledge reduces stigma and misinformation.</li>
+    </ul>
+
+    <h3>Join the Movement</h3>
+    <p>STI Aware is more than a resource—it’s a community pushing for open discussions, better education, and access to sexual health care.
+      Whether you're here to learn, find resources, or support the cause, your voice matters.</p>
+
+    <button id="open-modal">Learn More</button>
+
+
+    <form action="form.html" method="GET" class="join-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="interest">How would you like to participate?</label>
+      <select id="interest" name="interest">
+        <option value="volunteer">Volunteer for STI awareness</option>
+        <option value="subscribe">Subscribe for updates</option>
+        <option value="share-resources">Share educational resources</option>
+      </select>
+
+      <button type="submit">Join Now</button>
+    </form>
+  </section>
+
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h3>Our Mission</h3>
+      <p>We aim to educate and empower individuals with science-backed information and resources on sexual health.</p>
+
+      <h3>What We Offer</h3>
+      <ul>
+        <li>Clear information on STI symptoms, prevention, and treatment.</li>
+        <li>Guidance on testing and navigating an STI diagnosis.</li>
+        <li>Encouraging open conversations to break stigma and promote awareness.</li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+<hr class="hr1">
+
+
+<footer class="site-footer">
+  <p>&copy; 2025 STI Aware. All Rights Reserved.</p>
+  <nav>
+    <a href="About.html">About</a>
+    <a href="Health.html">Resources</a>
+  </nav>
+  <p>Email: info@stiaware.com | Call: +233 123 456 789</p>
+</footer>
+
+
+<script src="scripts/main.js"></script>
+<script src="scripts/Youtube-Api.js"></script>
+<script type="module" src="modules/modal.mjs"></script>
+
 </body>
 </html>
