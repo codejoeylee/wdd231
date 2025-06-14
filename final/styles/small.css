@@ -756,3 +756,7 @@ img {
     top: 8px;
     right: 8px;
 }
+
+.active-link {
+    text-decoration: underline;
+}
