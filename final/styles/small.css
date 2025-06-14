@@ -271,7 +271,7 @@ body {
 }
 
 #player {
-    max-width: 400px;
+    max-width: 330px;
     margin: 2rem auto;
     aspect-ratio: 16/9;
 }
